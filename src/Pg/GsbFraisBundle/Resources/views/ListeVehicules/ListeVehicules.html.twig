@@ -5,12 +5,11 @@
 <h2>Historique des Véhicules</h2>
 <table>
 	         {% for uneL in ListeVehiculesVisiteurs%}
-	        <th><h3>{{ uneL.nom}}</h3>
-            
-             matricule:{{ uneL.idnumImmat}}
-             <br/>marque:{{ uneL.marque}}
-             <br/>modele:{{ uneL.modele}}
-             <br/>couleur:{{ uneL.couleur}}</th>
+	        <th><h3>nom: {{ uneL.nom}}</h3>  
+           	 <br/>matricule: {{ uneL.idnumImmat}}
+             <br/>marque: {{ uneL.marque}}
+             <br/>modele: {{ uneL.modele}}
+             <br/>couleur: {{ uneL.couleur}}</th>
 
              
              {%endfor%}
